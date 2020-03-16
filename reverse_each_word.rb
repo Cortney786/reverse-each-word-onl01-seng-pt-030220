@@ -1,7 +1,9 @@
 
 
 
-def reverse_each_word(array)
-  reversed_array.each do |array|
- end
-end
+def reverse_each_word(sentence)
+ sentence.split.collect do |backard_words|
+   backard_words.reverse_each_word
+  end
+  .join(" ")
+ end 
